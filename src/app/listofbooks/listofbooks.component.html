@@ -1,0 +1,28 @@
+<style>.one{
+        
+        align-content:space-around;
+        background-color:green;
+        
+        
+    }
+    .three{
+        text-align:center        
+        
+        
+    }
+</style>
+<div class="one">
+<div class="two">
+<h1 appHighlighter>List of Books :</h1><br>
+<button (click)="fun1($event)" value="java" id="j">Java</button><br>
+<button (click)="fun1($event)" value=".Net" id="n">.Net</button><br>
+<button (click)="fun1($event)" value="Python" id="p">Python</button><br>
+<button (click)="fun1($event)" value="Jungle Book" id="ju">Jungle Boook</button><br>
+<p id="demo"></p>
+</div>
+
+<div class="three">
+<app-bookviews [book1]='book1' (valuechange)='displayCounter($event)'></app-bookviews>
+</div>
+</div>
+<!-- <p>{{message}}</p> -->
